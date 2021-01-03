@@ -1,0 +1,17 @@
+message: "Bonjour"
+
+# server configuration
+server:
+  type: simple
+  applicationContextPath: /dropapp
+  connector:
+    type: http
+    port: 8080
+
+# database configuration
+database:
+  driverClass: com.mysql.cj.jdbc.Driver
+  user: mohit
+  password: Mysql@123
+  url: jdbc:mysql://localhost:3306/usermanager
+  validationQuery: "/* MyService Health Check */ SELECT 1"

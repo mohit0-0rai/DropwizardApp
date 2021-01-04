@@ -8,11 +8,14 @@ import java.util.List;
 
 @RegisterRowMapper(UserMapper.class)
 public interface UserRepository {
+
     @RegisterRowMapper(UserMapper.class)
     @SqlQuery("select * from user")
     List<User> getUsers();
 
     @SqlQuery("select * from user where id = ?")
     User getUser(Integer id);
+
+
 
 }

@@ -8,13 +8,18 @@ import javax.validation.Valid;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
-public class ServerConfig extends Configuration {
+public class ServerConfiguration extends Configuration {
     @NotEmpty
     private String message;
 
     @Valid
     @NotNull
     private DataSourceFactory dataSource = new DataSourceFactory();
+
+    @JsonProperty("message")
+    public String getMessage() {
+        return this.message;
+    }
 
     @JsonProperty("database")
     public DataSourceFactory getDataSource() {
@@ -26,7 +31,4 @@ public class ServerConfig extends Configuration {
         this.dataSource = dataSource;
     }
 
-    public String getMessage() {
-        return this.message;
-    }
 }

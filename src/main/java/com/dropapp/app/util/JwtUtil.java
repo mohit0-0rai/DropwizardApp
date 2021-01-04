@@ -24,8 +24,7 @@ public class JwtUtil {
                 .compact();
     }
 
-    public static Claims validateToken(String header) throws Exception {
-        String token = header.substring(7);
+    public static Claims validateToken(String token) throws Exception {
         return Jwts.parser().setSigningKey(DatatypeConverter.parseBase64Binary(Constant.APP_SECRET_KEY))
                 .parseClaimsJws(validateToken(token).getId())
                 .getBody();
@@ -33,7 +32,6 @@ public class JwtUtil {
 
     public static Integer getUserId(String header) throws Exception {
         String token = header.substring(7);
-
-        return Integer.parseInt(validateToken(token).getId());
+        return Integer.parseInt(validateToken(header).getId());
     }
 }

@@ -1,0 +1,41 @@
+INFO  [2021-01-04 10:09:01,958] org.eclipse.jetty.server.AbstractConnector: Stopped application@7bde1f3a{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+INFO  [2021-01-04 10:09:01,961] org.eclipse.jetty.server.AbstractConnector: Stopped application@15923407{SSL, (ssl, http/1.1)}{0.0.0.0:8443}
+INFO  [2021-01-04 10:09:01,962] org.eclipse.jetty.server.AbstractConnector: Stopped admin@67dba613{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+INFO  [2021-01-04 10:09:01,963] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@2a097d77{/admin,null,STOPPED}
+INFO  [2021-01-04 10:09:01,970] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@109f8c7e{/app,null,STOPPED}
+INFO  [2021-01-04 10:09:05,337] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /app
+INFO  [2021-01-04 10:09:05,339] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /admin
+INFO  [2021-01-04 10:09:05,566] io.dropwizard.server.ServerFactory: Starting ServerApplication
+INFO  [2021-01-04 10:09:05,642] org.eclipse.jetty.setuid.SetUIDListener: Opened application@7bde1f3a{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+INFO  [2021-01-04 10:09:05,643] org.eclipse.jetty.setuid.SetUIDListener: Opened application@15923407{SSL, (ssl, http/1.1)}{0.0.0.0:8443}
+INFO  [2021-01-04 10:09:05,643] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@67dba613{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+INFO  [2021-01-04 10:09:05,644] org.eclipse.jetty.server.Server: jetty-9.4.35.v20201120; built: 2020-11-20T21:17:03.964Z; git: bdc54f03a5e0a7e280fab27f55c3c75ee8da89fb; jvm 1.8.0_275-8u275-b01-0ubuntu1~20.04-b01
+INFO  [2021-01-04 10:09:06,196] org.eclipse.jetty.util.ssl.SslContextFactory: x509=X509@7bc6d27a(dropapp,h=[],w=[]) for Server@6ab4ba9f[provider=null,keyStore=file:///home/mohit/IdeaProjects/Dropwizard%20app/src/main/resources/KeyStore.jks,trustStore=null]
+INFO  [2021-01-04 10:09:06,207] io.dropwizard.jetty.HttpsConnectorFactory: Enabled protocols: [TLSv1.2]
+INFO  [2021-01-04 10:09:06,207] io.dropwizard.jetty.HttpsConnectorFactory: Disabled protocols: [SSLv2Hello, SSLv3, TLSv1, TLSv1.1, TLSv1.3]
+INFO  [2021-01-04 10:09:06,207] io.dropwizard.jetty.HttpsConnectorFactory: Enabled cipher suites: [TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+INFO  [2021-01-04 10:09:06,207] io.dropwizard.jetty.HttpsConnectorFactory: Disabled cipher suites: [TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_256_GCM_SHA384]
+INFO  [2021-01-04 10:09:06,605] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /hello/{name} (com.dropapp.app.resource.HelloResource)
+    POST    /login (com.dropapp.app.resource.AuthenticationResource)
+    POST    /register (com.dropapp.app.resource.AuthenticationResource)
+    POST    /test (com.dropapp.app.resource.AuthenticationResource)
+    GET     /users (com.dropapp.app.resource.UserResource)
+    PUT     /users/update (com.dropapp.app.resource.UserResource)
+    GET     /users/{id} (com.dropapp.app.resource.UserResource)
+
+WARN  [2021-01-04 10:09:06,606] org.glassfish.jersey.internal.Errors: The following warnings have been detected: WARNING: The (sub)resource method getAllUsers in com.dropapp.app.resource.UserResource contains empty path annotation.
+
+INFO  [2021-01-04 10:09:06,607] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@5edacf20{/app,null,AVAILABLE}
+INFO  [2021-01-04 10:09:06,610] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2021-01-04 10:09:06,611] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@53c1179a{/admin,null,AVAILABLE}
+INFO  [2021-01-04 10:09:06,616] org.eclipse.jetty.server.AbstractConnector: Started application@7bde1f3a{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+INFO  [2021-01-04 10:09:06,617] org.eclipse.jetty.server.AbstractConnector: Started application@15923407{SSL, (ssl, http/1.1)}{0.0.0.0:8443}
+INFO  [2021-01-04 10:09:06,618] org.eclipse.jetty.server.AbstractConnector: Started admin@67dba613{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+INFO  [2021-01-04 10:09:06,618] org.eclipse.jetty.server.Server: Started @2897ms
+INFO  [2021-01-04 10:09:24,916] com.dropapp.app.filter.JwtFilter: ################### In JwtFilter

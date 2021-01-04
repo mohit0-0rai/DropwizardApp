@@ -1,5 +1,6 @@
 package com.dropapp.app.resource;
 
+import com.dropapp.app.entity.User;
 import com.dropapp.app.model.Login;
 import com.dropapp.app.model.Response;
 import com.dropapp.app.repository.UserRepository;
@@ -19,12 +20,9 @@ import java.util.Map;
 @Produces({MediaType.APPLICATION_JSON})
 public class AuthenticationResource {
 
-    private AuthenticationService authService;
-
     private UserRepository userRepository;
 
-    public AuthenticationResource(AuthenticationService authService, UserRepository userRepository) {
-        this.authService = authService;
+    public AuthenticationResource(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
 
@@ -46,6 +44,18 @@ public class AuthenticationResource {
         return response;
     }
 
+    @Path("register")
+    @POST
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Response login(User user) {
+        Response response = new Response();
+        try {
+
+        } catch (Exception e) {
+
+        }
+        return response;
+    }
     @Path("test")
     @POST
     @Consumes(MediaType.APPLICATION_JSON)

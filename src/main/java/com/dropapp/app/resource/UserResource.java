@@ -35,7 +35,7 @@ public class UserResource {
         return response;
     }
 
-    @Path("")
+    @Path("{id}")
     @GET
     public Response getUser(@PathParam("id") String id) {
         Response response = new Response();
